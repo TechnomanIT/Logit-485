@@ -69,14 +69,7 @@ namespace Log_It.Forms
         System.Windows.Forms.Timer backuptimer = null;
         DateTime backuplast;
 
-        //[DllImport("aosong.dll")]
-        //public static extern int CloseComm();
-        //[DllImport("aosong.dll")]
-        //public static extern int OpenComm(string port, int baudrate, int databit, int stopbit);
-        //[DllImport("aosong.dll")]
-        //public static extern int SendCommand(int number);
-        //[DllImport("aosong.dll")]
-        //public static extern int ReadData(out int address, out float temp, out float humnid);
+        
         private ModbusTCP.Master MBmaster;
         private byte[] data;
 
