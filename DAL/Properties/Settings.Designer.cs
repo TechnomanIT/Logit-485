@@ -65,5 +65,27 @@ namespace DAL.Properties {
                 return ((string)(this["PlotterRS485ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-3103HF3;Initial Catalog=PlotterDA;User ID=sa;Password=microso" +
+            "ft;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True")]
+        public string PlotterDAConnectionString3 {
+            get {
+                return ((string)(this["PlotterDAConnectionString3"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-3103HF3;Initial Catalog=PlotterRS485;User ID=sa;Password=micr" +
+            "osoft;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True")]
+        public string PlotterRS485ConnectionString1 {
+            get {
+                return ((string)(this["PlotterRS485ConnectionString1"]));
+            }
+        }
     }
 }
