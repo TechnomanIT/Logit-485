@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Records" targetNamespace="http://tempuri.org/Records.xsd" xmlns:mstns="http://tempuri.org/Records.xsd" xmlns="http://tempuri.org/Records.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Records" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Records" msprop:Generator_UserDSName="Records">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RECODE1" msprop:Generator_TableClassName="RECODE1DataTable" msprop:Generator_TableVarName="tableRECODE1" msprop:Generator_TablePropName="RECODE1" msprop:Generator_RowDeletingName="RECODE1RowDeleting" msprop:Generator_RowChangingName="RECODE1RowChanging" msprop:Generator_RowEvHandlerName="RECODE1RowChangeEventHandler" msprop:Generator_RowDeletedName="RECODE1RowDeleted" msprop:Generator_UserTableName="RECODE1" msprop:Generator_RowChangedName="RECODE1RowChanged" msprop:Generator_RowEvArgName="RECODE1RowChangeEvent" msprop:Generator_RowClassName="RECODE1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CHANNELID" msprop:Generator_ColumnVarNameInTable="columnCHANNELID" msprop:Generator_ColumnPropNameInRow="CHANNELID" msprop:Generator_ColumnPropNameInTable="CHANNELIDColumn" msprop:Generator_UserColumnName="CHANNELID" type="xs:string" />
+              <xs:element name="DT" msprop:Generator_ColumnVarNameInTable="columnDT" msprop:Generator_ColumnPropNameInRow="DT" msprop:Generator_ColumnPropNameInTable="DTColumn" msprop:Generator_UserColumnName="DT" type="xs:dateTime" />
+              <xs:element name="RECORDSTATUS" msprop:Generator_ColumnVarNameInTable="columnRECORDSTATUS" msprop:Generator_ColumnPropNameInRow="RECORDSTATUS" msprop:Generator_ColumnPropNameInTable="RECORDSTATUSColumn" msprop:Generator_UserColumnName="RECORDSTATUS" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="RH" msprop:Generator_ColumnVarNameInTable="columnRH" msprop:Generator_ColumnPropNameInRow="RH" msprop:Generator_ColumnPropNameInTable="RHColumn" msprop:Generator_UserColumnName="RH" type="xs:double" minOccurs="0" />
+              <xs:element name="TEMP" msprop:Generator_ColumnVarNameInTable="columnTEMP" msprop:Generator_ColumnPropNameInRow="TEMP" msprop:Generator_ColumnPropNameInTable="TEMPColumn" msprop:Generator_UserColumnName="TEMP" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RECODE2" msprop:Generator_TableClassName="RECODE2DataTable" msprop:Generator_TableVarName="tableRECODE2" msprop:Generator_TablePropName="RECODE2" msprop:Generator_RowDeletingName="RECODE2RowDeleting" msprop:Generator_RowChangingName="RECODE2RowChanging" msprop:Generator_RowEvHandlerName="RECODE2RowChangeEventHandler" msprop:Generator_RowDeletedName="RECODE2RowDeleted" msprop:Generator_UserTableName="RECODE2" msprop:Generator_RowChangedName="RECODE2RowChanged" msprop:Generator_RowEvArgName="RECODE2RowChangeEvent" msprop:Generator_RowClassName="RECODE2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CHANNELID" msprop:Generator_ColumnVarNameInTable="columnCHANNELID" msprop:Generator_ColumnPropNameInRow="CHANNELID" msprop:Generator_ColumnPropNameInTable="CHANNELIDColumn" msprop:Generator_UserColumnName="CHANNELID" type="xs:string" />
+              <xs:element name="DT" msprop:Generator_ColumnVarNameInTable="columnDT" msprop:Generator_ColumnPropNameInRow="DT" msprop:Generator_ColumnPropNameInTable="DTColumn" msprop:Generator_UserColumnName="DT" type="xs:dateTime" />
+              <xs:element name="RECORDSTATUS" msprop:Generator_ColumnVarNameInTable="columnRECORDSTATUS" msprop:Generator_ColumnPropNameInRow="RECORDSTATUS" msprop:Generator_ColumnPropNameInTable="RECORDSTATUSColumn" msprop:Generator_UserColumnName="RECORDSTATUS" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="TEMP" msprop:Generator_ColumnVarNameInTable="columnTEMP" msprop:Generator_ColumnPropNameInRow="TEMP" msprop:Generator_ColumnPropNameInTable="TEMPColumn" msprop:Generator_UserColumnName="TEMP" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RECODE1" />
+      <xs:field xpath="mstns:CHANNELID" />
+      <xs:field xpath="mstns:DT" />
+    </xs:unique>
+    <xs:unique name="RECODE2_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RECODE2" />
+      <xs:field xpath="mstns:CHANNELID" />
+      <xs:field xpath="mstns:DT" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
